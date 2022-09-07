@@ -69,8 +69,15 @@ function playRound(playerSelec, computerSelec){
 
 }
 
-const player = getPlayerChoice();
-const comp = getComputerChoice();
+function game() {
+    for (let i = 0; i < 5; i++) {
+        const player = getPlayerChoice();
+        const comp = getComputerChoice();
+        playRound(player, comp);
+     }
+}
+
+game();
 
 
-playRound(player, comp);
+
